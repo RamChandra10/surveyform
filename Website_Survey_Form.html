@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Survey Form</title>
+  	<link rel="stylesheet" href="css/bootstrap.css" >
+  	<script src = "jquery-3.3.1.min.js"></script>
+  	<script src ="js/bootstrap.min.js"></script>	
+  	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  	<style>
+  	body{
+  		background-color:#87bdd8;
+  	}
+  	.container{
+  		max-width:700px;
+  		background-color:hsl(180,80%,60%);
+  		background-color:rgba(71,235,235,0.5);
+  	}
+  	hr{
+  		width:75%;
+  	}
+  </style>
+</head>
+<body>
+	<div class = "container">
+		<form id = "survey-form" class = "form-horizontal" action = "#" method = "post">
+			<div class = "text-center"><h1 id = "title">Website Survey</h1></div>
+			<p id = "description" class = "text-center">Let us know how we can improve our website</p>
+			<hr>
+			<div class = "form-group">
+				<label id = "name-label" class = "control-label col-sm-3">*Name: </label>
+				<div class = "col-sm-7">
+					<input type = "text" class = "form-control" id = "name" placeholder = "Your name" required>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label id = "email-label" class = "control-label col-sm-3">*Email: </label>
+				<div class = "col-sm-7">
+					<input type = "email" class = "form-control" id = "email" placeholder = "Your email" required>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label id = "number-label" class = "control-label col-sm-3" >*Age: </label>
+				<div class = "col-sm-7">
+					<input  type = "number" class = "form-control" id = "number" placeholder = "Your age" min = "15" max = "125" value = " " required>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label for = "gender" class = "control-label col-sm-3">Gender</label>
+				<div class = "radio col-sm-5">
+					<label><input type = "radio" name = "gender" value = "male">Male</label>
+					<label><input type = "radio" name = "gender" value = "female">Female</label>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label for = "rate" class = "control-label col-sm-3">Rate Our Site: </label>
+				<div class = "col-sm-8">
+					<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+					<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+					<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+					<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+					<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label for = "find us" class = "control-label col-sm-3">How do you find us ?</label>
+				<div class = "col-sm-3">
+					<select class = "form-control" id = "dropdown">
+						<option></option>
+						<option>Google</option>
+						<option>Instagram</option>
+						<option>Facebook</option>
+						<option>Yahoo</option>
+						<option>Youtube</option>
+					</select>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label for = "recommend" class = "control-label col-sm-3">Would you recommend it to your friends and colleagues?</label>
+				<div class = "radio col-sm-7">
+					<label><input type = "radio" name = "recommend" name = "share" value = "yes">Yes</label>
+					<label><input type = "radio" name = "recommend" name = "share" value = "no">No</label>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label for = "comments" class = "control-label col-sm-3">Any suggestions/comment that will help us improve ?</label>
+				<div class = "col-sm-7">
+					<textarea class = "form-control" rows = "4" placeholder="Enter your comments here..."></textarea>
+				</div>
+			</div>
+			<div class = "form-group">
+				<label for = "reason" class = "control-label col-sm-3">What is the main reason you visit our website ?</label>
+				<div class = "col-sm-7">
+					<div class = "checkbox">
+						<label><input type = "checkbox" value = "Website Design">Website Design</label>
+					</div>
+					<div class = "checkbox">
+						<label><input type = "checkbox" value = "User Interface">User Interface</label>
+					</div>
+					<div class = "checkbox">
+						<label><input type = "checkbox" value = "Large section of evergreen movies">Large section of evergreen movies</label>
+					</div>
+					<div class = "checkbox">
+						<label><input type = "checkbox" value = "Easy to use">Easy to use</label>
+					</div>
+					<div class = "checkbox">
+						<label><input type = "checkbox" value = "Image">Image</label>
+					</div>
+					<div class = "checkbox">
+						<label><input type = "checkbox" value = "Collection of celebrities and movies">Collection of celebrities and movies</label>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class = "form-group">
+				<div class= " text-center col-sm-offset-3 col-sm-3">
+					<button type = "submit" class = "btn btn-primary btn-block" id  = "submit">Submit</button>
+				</div>
+			</div>
+
+
+</body>
+</html>
